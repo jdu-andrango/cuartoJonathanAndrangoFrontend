@@ -7,3 +7,24 @@
 <p-button label="Warning" severity="warning"></p-button>
 <p-button label="Help" severity="help"></p-button>
 <p-button label="Danger" severity="danger"></p-button>
+
+
+
+<h2>formulario basico</h2>
+<div class="container">
+<form [formGroup]="basicForm" (ngSubmit)="onSubmit()">
+<div class="p-field">
+    <label for="name">name</label>
+    <input id="name" type="text" [(ngModel)]="name" name="name" pInputText required>
+</div>
+<div class="p-field">
+    <label for="email">email</label>
+    <input id="email" type="email" [(ngModel)]="email"  name="email"  required>
+</div>
+<div class="p-field">
+    <label for="birthdate">cumple</label>
+    <p-calendar id="birthdate" [(ngModel)]="birthdate"  ></p-calendar>
+</div>
+<button type="submit" pButton pRipple class="p-button success" ></button>
+</form>
+</div>

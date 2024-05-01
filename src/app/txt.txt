@@ -1,0 +1,52 @@
+export class AppComponent implements OnInit {
+  title = 'jonathanAndrangoFrontend';
+  constructor(private primengConfig: PrimeNGConfig) {}
+
+  ngOnInit() {
+      this.primengConfig.ripple = true;
+  }
+}
+
+
+
+
+
+////////////////////////////////////////
+
+export class BasicFormComponent {
+  bassicform: FormGroup;
+  constructor (private formbuilder:FormBuilder){
+  this.bassicform= this.formbuilder.group({
+    name:['', Validators.required],
+    email:['', Validators.required],
+    birthey:['']
+  }) 
+    
+  }
+}
+
+
+
+
+
+
+export class AppComponents {
+    name:string = '';
+    email:string= '';
+    birthdate:Date= new Date;
+
+    constructor(){
+      this.name = '' ;
+      this.email = '';
+      this.birthdate = '' ;
+    }
+
+
+    onSubmit(){
+      console.log('form submited'),
+      console.log('name', this.name),
+      console.log('email', this.email ),
+      console.log('byrthdate', this.birthdate),
+
+    }
+}
