@@ -25,3 +25,29 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+
+## Comandos Extras a instalar
+
+```
+npm install @angular/cdk
+
+```
+```
+npm install primeng
+
+```
+```
+npm install primeng primeicons
+
+```
+```
+npm install @angular/animations
+
+```
+
+
+# Creacion de un proyecto modular(tenga modulos)
+```
+ng new nombreProyecto --standalone
+```
